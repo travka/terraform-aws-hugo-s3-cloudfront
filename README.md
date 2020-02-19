@@ -11,6 +11,7 @@ supports S3 redirects. This module helps keep setup consistent for multiple Hugo
  - `bucket_name` - Name of bucket to use, must be globally unique
  - `cert_domain` - Domain name on existing Amazon Certificate Manager certificate to use with CloudFront
  - `deployment_user_arn` - ARN to a user to be given permission to put objects into the bucket
+ - `aws.acm_provider` - to allow properly assign SSL certificates in another regions
 
 ## Optional Inputs
 
