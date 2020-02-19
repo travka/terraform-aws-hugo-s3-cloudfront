@@ -36,6 +36,7 @@ resource "aws_s3_bucket" "hugo" {
 // Get ACM cert for use with CloudFront
 data "aws_acm_certificate" "cert" {
   domain = var.cert_domain
+  provider = "aws.acm_provider"
 }
 
 /*
